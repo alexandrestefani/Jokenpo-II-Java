@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Jokenpo II</string>
+    <string name="first_image_text">Pedra</string>
+    <string name="second_image_text">Papel</string>
+    <string name="third_image_text">Tesoura</string>
+    <string name="text_choise_app">Escolha do APP</string>
+    <string name="clickable_picture_one">Primeira figura Pedra</string>
+    <string name="seconf_clickable_imagem">Imagem clicavel Papel</string>
+    <string name="third_clickable_image">Imagem Clicavel Tesoura</string>
+</resources>

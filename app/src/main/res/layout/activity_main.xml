@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#006E90"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageRock"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="70dp"
+        android:contentDescription="@string/clickable_picture_one"
+        android:onClick="rockSelected"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imagePaper"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pedra" />
+
+    <ImageView
+        android:id="@+id/imagePaper"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/seconf_clickable_imagem"
+        android:onClick="paperSelected"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageRock"
+        app:layout_constraintEnd_toStartOf="@+id/imageScissor"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageRock"
+        app:srcCompat="@drawable/papel" />
+
+    <ImageView
+        android:id="@+id/imageScissor"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/third_clickable_image"
+        android:onClick="scissorSelected"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imagePaper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imagePaper"
+        app:srcCompat="@drawable/tesoura" />
+
+    <ImageView
+        android:id="@+id/imageResult"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/branco" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imagePaper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageResult"
+        app:layout_constraintVertical_bias="0.24000001" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/first_image_text"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imageRock"
+        app:layout_constraintStart_toStartOf="@+id/imageRock"
+        app:layout_constraintTop_toBottomOf="@+id/imageRock" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/second_image_text"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imagePaper"
+        app:layout_constraintStart_toStartOf="@+id/imagePaper"
+        app:layout_constraintTop_toBottomOf="@+id/imagePaper" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/audiowide"
+        android:shadowColor="@color/white"
+        android:text="@string/third_image_text"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imageScissor"
+        app:layout_constraintStart_toStartOf="@+id/imageScissor"
+        app:layout_constraintTop_toBottomOf="@+id/imageScissor" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/text_choise_app"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
